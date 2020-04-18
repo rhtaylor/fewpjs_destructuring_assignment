@@ -1,7 +1,14 @@
+let foo = ["this", "is", "foo", "bar"] 
+let [that, was, faz, baz] = foo
+
 const farmAnimals = 'cow horse sheep pig chicken'
+const [ moo, neigh, baa, oink, cluck ] = farmAnimals.split(" "); 
+const [Bessie, , Dolly, Babe, Little] = farmAnimals.split(" "); 
+
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
-
+const [red, orange, yellow, green, blue, indigo, violet] = colors 
+const [ r, o, y, g, b, indg, v] = colors
 const muppet = {
   name: 'Kermit',
   color: 'green',
@@ -24,6 +31,13 @@ const k_muppet = {
   k_job: 'Host of The Muppet Show',
   k_partner: 'Miss Piggy'
 };
+
+const black_and_white = moo;
+const black = baa; 
+const pink = oink;
+const { name, color, song, job, partner } = muppet 
+const { k_name, k_color, k_album, k_job, k_partner} = k_muppet 
+const { song_2, song_4 } = k_album["the_muppet_movie"] 
 
 // Strings
 
